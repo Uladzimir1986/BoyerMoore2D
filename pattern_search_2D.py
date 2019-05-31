@@ -16,9 +16,10 @@ class PatternSearch2D(): # pylint: disable=too-few-public-methods, too-many-inst
     The algorithm is implementation of the idea from paper:
     "A Boyer-Moore Approach for Two-Dimensional Matching"
     https://pdfs.semanticscholar.org/ec0b/8b247b9a6efdbe8b3ddc2e4e3547cecf5223.pdf.
-    This implementation is modified for arbitrary shapes of pattern and text.
-    Average case complexity is sub-linear. Worst time complexity is O(m^2n^2).
-    ...
+
+    This implementation is modified to work with jagged 2D array shapes of pattern and text.
+    The expected running time of the algorithm is sub-linear for random texts and patterns.
+
     Attributes:
     ----------
     pattern : str
